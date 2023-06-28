@@ -1,0 +1,12 @@
+server:
+  port: 8789
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8788/eureka/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

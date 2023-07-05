@@ -47,7 +47,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/department/{departmentId}")
-    public List<Employee> getByLastName(@PathVariable("departmentId") Long departmentId){
+    public List<Employee> getByDepartment(@PathVariable("departmentId") Long departmentId){
         return employeeRepository.getByDepartment(departmentId);
     }
 
